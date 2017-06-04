@@ -8,8 +8,8 @@ public class Secretaria extends Empleado{
 	}
 	
 	@Override
-	public String toString(){		
-		return "Secretaria = nombre :"+this.nombre+"-FechadeNacimiento: "+this.diaNacimiento+"/"+this.mesNacimiento+"/"+this.anioNacimiento+"-salario: "+this.salario ;		
+	public String brindarDetalles(){		
+		return "Secretaria: Nombre: "+this.nombre+" - Fecha de Nacimiento: "+this.diaNacimiento+"/"+this.mesNacimiento+"/"+this.anioNacimiento+" - Salario: "+this.salario ;		
 	}
 
 }
