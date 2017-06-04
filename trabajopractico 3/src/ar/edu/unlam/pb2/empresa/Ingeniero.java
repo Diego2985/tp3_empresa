@@ -8,7 +8,7 @@ public class Ingeniero extends Empleado{
 	}
 	
 	@Override
-	public String toString(){		
-		return "Ingeniero = nombre :"+this.nombre+"-FechadeNacimiento: "+this.diaNacimiento+"/"+this.mesNacimiento+"/"+this.anioNacimiento+"-salario: "+this.salario ;		
+	public String brindarDetalles(){		
+		return "Ingeniero: Nombre: "+this.nombre+" - Fecha de Nacimiento: "+this.diaNacimiento+"/"+this.mesNacimiento+"/"+this.anioNacimiento+" - Salario: "+this.salario ;		
 	}
 }
