@@ -23,6 +23,7 @@ public class Director extends Empleado{
 	
 	public void setSalarioPlus(Double extra) {
 		this.salarioPlus = extra;
+		this.salario = this.salario + extra;
 	}
 	
 	public Double getSalarioPlus() {
@@ -30,8 +31,9 @@ public class Director extends Empleado{
 	}
 	
 	@Override
-	public String toString(){		
-		return "Director = nombre :"+this.nombre+"-FechadeNacimiento: "+this.diaNacimiento+"/"+this.mesNacimiento+"/"+this.anioNacimiento+"-salario: "+this.salario + " - cochera: " + this.idCochera+ " - salarioPlus: " + this.salarioPlus;		
+	public String brindarDetalles(){		
+		return "Director: Nombre: "+this.nombre+" - Fecha de Nacimiento: "+this.diaNacimiento+"/"+this.mesNacimiento+"/"+this.anioNacimiento+ " - Cochera: " + this.idCochera+" - Salario basico: "+(this.salario-this.salarioPlus) + " - Salario Plus: " + this.salarioPlus+ " - Salario Total: " + this.salario;		
 	}
+
 
 }
