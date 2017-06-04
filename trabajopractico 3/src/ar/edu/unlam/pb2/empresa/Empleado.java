@@ -19,8 +19,8 @@ public class Empleado {
 	}
 
 	//metodos
-	public String toString(){		
-		return "Empleado=nombre :"+this.nombre+"-FechadeNacimiento: "+this.diaNacimiento+"/"+this.mesNacimiento+"/"+this.anioNacimiento+"-salario: "+this.salario;		
+	public String brindarDetalles(){		
+		return "Empleado: Nombre :"+this.nombre+" - Fecha de Nacimiento: "+this.diaNacimiento+"/"+this.mesNacimiento+"/"+this.anioNacimiento+" - Salario: "+this.salario;		
 	}
 
 	public void setNombre(String nombre){
