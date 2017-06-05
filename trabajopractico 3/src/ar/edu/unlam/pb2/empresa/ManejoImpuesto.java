@@ -2,22 +2,18 @@ package ar.edu.unlam.pb2.empresa;
 
 public class ManejoImpuesto {
 	
-	private final double RANGO_A=15000.0;
-	private final double RANGO_B=25000.0;
-	private final double RANGO_C=40000.0;
+	private final Double RANGO_A=15000.0;
+	private final Double RANGO_B=25000.0;
+	private final Double RANGO_C=40000.0;
 	
-	private final double IMPUESTO_A=500.0;
-	private final double IMPUESTO_B=800.0;
-	private final double IMPUESTO_C=1500.0;
-	private final double IMPUESTO_D=2500.0;
+	private final Double IMPUESTO_A=500.0;
+	private final Double IMPUESTO_B=800.0;
+	private final Double IMPUESTO_C=1500.0;
+	private final Double IMPUESTO_D=2500.0;
 	
-	public ManejoImpuesto(){
-		super();
-	}
-	 
-	public Double calcularImpuesto(Empleado data) {
+	public Double obtenerImpuesto(Empleado data) {
 		
-		double salario = data.salario;
+		Double salario = data.salario;
 		
 		if (salario <= RANGO_A) {
 			return IMPUESTO_A;
@@ -27,6 +23,22 @@ public class ManejoImpuesto {
 			return IMPUESTO_C;
 		} else {
 			return IMPUESTO_D;
+		}
+		
+	}
+	 
+	public Double calcularImpuesto(Empleado data) {
+		
+		Double salario = data.salario;
+		
+		if (salario <= RANGO_A) {
+			return salario - IMPUESTO_A;
+		} else if (salario <= RANGO_B ) {
+			return salario - IMPUESTO_B;
+		} else if (salario <= RANGO_C ) {
+			return salario - IMPUESTO_C;
+		} else {
+			return salario - IMPUESTO_D;
 		}
 		
 	}

@@ -20,8 +20,8 @@ public class Gerente extends Empleado{
 	}
 
 	@Override
-	public String toString(){		
-		return "Gerente = nombre :"+this.nombre+"-FechadeNacimiento: "+this.diaNacimiento+"/"+this.mesNacimiento+"/"+this.anioNacimiento+"-salario: "+this.salario + " - cochera: " + this.idCochera;		
+	public String brindarDetalles(){		
+		return "Gerente: Nombre: "+this.nombre+" - Fecha de Nacimiento: "+this.diaNacimiento+"/"+this.mesNacimiento+"/"+this.anioNacimiento+" - Salario: "+this.salario + " - Cochera: " + this.idCochera;		
 	}
 
 }
